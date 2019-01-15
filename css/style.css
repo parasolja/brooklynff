@@ -1,0 +1,71 @@
+#logo {
+	width: 50px;
+	height: auto;
+}
+
+.navbar-light .navbar-nav .active>.nav-link {
+	padding-right: 70px;
+	padding-left: 80px;
+}
+
+.bg-light {
+	text-transform: uppercase;
+}
+
+.carousel.slide img {
+	width: 100% height: auto;
+}
+
+h1 {
+	font-size: 60px;
+	padding-top: 60px;
+}
+
+.display-4 {
+	font-size: 36px;
+}
+
+#title {
+	background-color: #E16E9B;
+	margin-top: 10px;
+}
+
+#eye {
+	margin-top: 50px;
+}
+
+.card-img-top {
+	width: 100%;
+	height: 40vw;
+	object-fit: cover;
+}
+
+.card-header {
+	text-align: center;
+}
+
+.btn-outline-primary {
+	margin-left: 20px;
+}
+
+.footer {
+	background-color: #ff8080;
+}
+
+.footer .display-4 {
+	font-size: 42px;
+}
+
+i {
+	padding: 10px 60px 50px 0px;
+}
+
+#contact {
+	font-size: 38px;
+}
+
+.contact-text {
+	font-size: 22px;
+}
+
+
