@@ -3,6 +3,7 @@
 	<head>
 		<meta charset="UTF-8">
 			<title>Brooklyn Outdoor Film Festival</title>
+			<link rel="shortcut icon" href="media/logo-pop.ico" />
 		</meta>
 		<meta name="viewport"
 			content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -13,10 +14,12 @@
 			<link rel="stylesheet" href="css/style.css" />
 			<link rel="stylesheet"
 				href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+
+
 		</meta>
 	</head>
 	<body>
-		<header>
+		<header id='thetop'>
 			<nav
 				class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
 				<button class="navbar-toggler" type="button"
@@ -28,37 +31,31 @@
 				<div class="collapse navbar-collapse" id="navbarNav">
 					<ul class="navbar-nav">
 						<li class="nav-item active">
-							<a class="nav-link" href="#">
-								Home
-								<span class="sr-only">(current)</span>
-							</a>
-						</li>
-						<li class="nav-item active">
-							<a class="nav-link" href="#">
+							<a class="nav-link" href="#headline1">
 								Program
 								<span class="sr-only">(current)</span>
 							</a>
 						</li>
 						<li class="nav-item active">
-							<a class="nav-link" href="#">
+							<a class="nav-link" href="#headline2">
 								Register
 								<span class="sr-only">(current)</span>
 							</a>
 						</li>
 						<li class="nav-item active">
-							<a class="nav-link" href="#">
+							<a class="nav-link" href="#headline3">
 								News
 								<span class="sr-only">(current)</span>
 							</a>
 						</li>
 						<li class="nav-item active">
-							<a class="nav-link" href="#">
+							<a class="nav-link" href="#headline4">
 								About
 								<span class="sr-only">(current)</span>
 							</a>
 						</li>
 						<li class="nav-item active">
-							<a class="nav-link" href="#">
+							<a class="nav-link" href="#headline5">
 								Contact
 								<span class="sr-only">(current)</span>
 							</a>
@@ -69,30 +66,56 @@
 		</header>
 		<div class="container-fluid">
 			<div class="row">
-				<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12" id="title">
-					<h1 class="display-3">Brooklyn Outdoor Film Festival 2019</h1>
-					<h2 class="display-4">August 5th-8th</h2>
+				<div class="col-lg-6 col-md-12 col-sm-12 col-xs-12" id="title">
+					<h1 class="display-3">Brooklyn
+						Outdoor Film Festival 2019</h1>
+					<h2 class="display-4" id="subtitle">August 5th-8th, Brooklyn Bridge Park</h2>
 				</div>
-				<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-					<img src="media/eye.png" alt="logo" id="eye" class="img-fluid" />
+				<div class="col-lg-6 col-md-12 col-sm-12 col-xs-12"
+					id="cover-image">
+					<img src="media/pop.jpg" alt="logo" class="img-fluid" />
 				</div>
 			</div>
-			<div class="row jumbotron jumbotron-fluid">
-				<div class="container">
-					<h2 class="display-4">BEST MOVIES SELECTION</h2>
-					<p class="lead">This is a modified jumbotron that occupies the entire
-						horizontal space of its parent.</p>
+			<div id="headline4">
+				<div class="row jumbotron jumbotron-fluid">
+					<div class="container">
+						<h2 class="display-4">ABOUT THE FESTIVAL</h2>
+						<p class="lead">
+							Brooklyn Bridge Park and Brooklyn Vibes
+							Events Co. are inviting you for the most exciting and exected
+							festival of the year - Brooklyn Outdoor Film Festival!
+							This August we will show you carefully selected movies, in different
+							genres for all kinds of movie lovers! Kids will enjoy our
+							festival as much as their parents. We chose some family-friendly
+							movies, intriguing sci-fi, and for those that want to stay with
+							us longer, we have some thrilling and fantastic films to enjoy.
+							We want our guests to experience a unique joy of watching movies
+							open air, under a starry sky.
+							<br/>
+							<br/>
+							Our festival is free of charge, but places are limited, so it's
+							necessary to book a seat first. We also recommend taking some
+							blankets with you keep it nice, warm and cozy.
+							We will also have a food court in the area, so you can enjoy the
+							freshest popcorn while watching some great movies we prepared for
+							you.
+							Stop waiting, register and meet the last month of Summer with
+							Brooklyn Outdoor Film Festival!
+						</p>
+					</div>
 				</div>
 			</div>
 			<!-- HERE STARTS THE MOVIES ROW -->
 			<div class="row" id="movies">
+				<div id="headline1"></div>
 				<div class="card-group">
 					<div class="card">
 						<div class="card-header">August 5th, 6:00 pm</div>
 						<img class="card-img-top" src="media/fox.jpg" alt="Card Image" />
 						<div class="card-body">
 							<h5 class="card-title">Fantastic Mister Fox (2009)</h5>
-							<span class="badge badge-success">PG</span>
+							<span class="badge badge-success"
+								title="Parental Guidance Suggested">PG</span>
 							<small id="info" class="text-muted">Animation, Adventure, Comedy | 1h
 								27min</small>
 							<p class="card-text">An urbane fox cannot resist returning to his farm
@@ -100,9 +123,9 @@
 								farmers' retaliation..</p>
 						</div>
 						<div class="card-footer">
+							<a href="#headline2" class="btn btn-outline-primary">Register</a>
 							<a href="https://www.youtube.com/embed/n2igjYFojUo"
 								target="_blank" class="btn btn-outline-primary">Watch Trailer on YouTube</a>
-							<a href="#" class="btn btn-outline-primary">Pre-Register</a>
 						</div>
 					</div>
 					<div class="card">
@@ -111,7 +134,8 @@
 							alt="Card Image" />
 						<div class="card-body">
 							<h5 class="card-title">The Hitchhiker's Guide to the Galaxy (2005)</h5>
-							<span class="badge badge-success">PG</span>
+							<span class="badge badge-success"
+								title="Parental Guidance Suggested">PG</span>
 							<small id="info" class="text-muted">Adventure, Comedy, Sci-Fi | 1h 49min</small>
 							<p class="card-text">Mere seconds before the Earth is to be demolished by
 								an alien construction crew, journeyman Arthur Dent is swept off
@@ -119,9 +143,9 @@
 								new edition of "The Hitchhiker's Guide to the Galaxy".</p>
 						</div>
 						<div class="card-footer">
+							<a href="#headline2" class="btn btn-outline-primary">Register</a>
 							<a href="https://youtu.be/eLdiWe_HJv4" target="_blank"
 								class="btn btn-outline-primary">Watch Trailer on YouTube</a>
-							<a href="#" class="btn btn-outline-primary">Pre-Register</a>
 						</div>
 					</div>
 					<div class="card">
@@ -130,16 +154,17 @@
 							alt="Card Image" />
 						<div class="card-body">
 							<h5 class="card-title">The Square (2017)</h5>
-							<span class="badge badge-danger">R</span>
+							<span class="badge badge-danger"
+								title="Restricted. Under 17 requires accompanying parent or adult guardian">R</span>
 							<small id="info" class="text-muted">Comedy, Drama | 2h 31min</small>
 							<p class="card-text">A prestigious Stockholm museum's chief art curator
 								finds himself in times of both professional and personal crisis
 								as he attempts to set up a controversial new exhibit.</p>
 						</div>
 						<div class="card-footer" id="square">
+							<a href="#headline2" class="btn btn-outline-primary">Register</a>
 							<a href="https://youtu.be/EUzRjRv0Ib0" target="_blank"
 								class="btn btn-outline-primary">Watch Trailer on YouTube</a>
-							<a href="#" class="btn btn-outline-primary">Pre-Register</a>
 						</div>
 					</div>
 				</div>
@@ -152,16 +177,17 @@
 							alt="Card Image" />
 						<div class="card-body">
 							<h5 class="card-title">Isle of Dogs (2018)</h5>
-							<span class="badge badge-warning">PG-13</span>
+							<span class="badge badge-warning"
+								title="Parents Strongly Cautioned">PG-13</span>
 							<small id="info" class="text-muted">Animation, Adventure, Comedy | 1h
 								41min</small>
 							<p class="card-text">Set in Japan, Isle of Dogs follows a boy's odyssey in
 								search of his lost dog.</p>
 						</div>
 						<div class="card-footer" id="dogs">
+							<a href="#headline2" class="btn btn-outline-primary">Register</a>
 							<a href="https://youtu.be/dt__kig8PVU" target="_blank"
 								class="btn btn-outline-primary">Watch Trailer on YouTube</a>
-							<a href="#" class="btn btn-outline-primary">Pre-Register</a>
 						</div>
 					</div>
 					<div class="card">
@@ -170,7 +196,8 @@
 							alt="Card Image" />
 						<div class="card-body">
 							<h5 class="card-title">Moon (2009)</h5>
-							<span class="badge badge-danger">R</span>
+							<span class="badge badge-danger"
+								title="Restricted. Under 17 requires accompanying parent or adult guardian">R</span>
 							<small id="info" class="text-muted">Drama, Mystery, Sci-Fi | 1h 37min</small>
 							<p class="card-text">Astronaut Sam Bell has a quintessentially personal
 								encounter toward the end of his three-year stint on the Moon,
@@ -179,9 +206,9 @@
 								planet's power problems.</p>
 						</div>
 						<div class="card-footer">
+							<a href="#headline2" class="btn btn-outline-primary">Register</a>
 							<a href="https://youtu.be/WWoDBcSW4_c" target="_blank"
 								class="btn btn-outline-primary">Watch Trailer on YouTube</a>
-							<a href="#" class="btn btn-outline-primary">Pre-Register</a>
 						</div>
 					</div>
 					<div class="card">
@@ -190,15 +217,16 @@
 							alt="Card Image" />
 						<div class="card-body">
 							<h5 class="card-title">High-Rise (2015)</h5>
-							<span class="badge badge-danger">R</span>
+							<span class="badge badge-danger"
+								title="Restricted. Under 17 requires accompanying parent or adult guardian">R</span>
 							<small id="info" class="text-muted">Drama, Horror, Sci-Fi | 1h 59min</small>
 							<p class="card-text">Life for the residents of a tower block begins to run
 								out of control.</p>
 						</div>
 						<div class="card-footer" id="high">
+							<a href="#headline2" class="btn btn-outline-primary">Register</a>
 							<a href="https://youtu.be/LKPghZ5cc_E" target="_blank"
 								class="btn btn-outline-primary">Watch Trailer on YouTube</a>
-							<a href="#" class="btn btn-outline-primary">Pre-Register</a>
 						</div>
 					</div>
 				</div>
@@ -211,15 +239,16 @@
 							alt="Card Image" />
 						<div class="card-body">
 							<h5 class="card-title">Moonrise Kingdom (2012)</h5>
-							<span class="badge badge-warning">PG-13</span>
+							<span class="badge badge-warning"
+								title="Parents Strongly Cautioned">PG-13</span>
 							<small id="info" class="text-muted">Adventure, Comedy, Drama | 1h 34min</small>
 							<p class="card-text">A pair of young lovers flee their New England town,
 								which causes a local search party to fan out to find them.</p>
 						</div>
 						<div class="card-footer" id="moonrise">
+							<a href="#headline2" class="btn btn-outline-primary">Register</a>
 							<a href="https://youtu.be/_eOI3AamSm8" target="_blank"
 								class="btn btn-outline-primary">Watch Trailer on YouTube</a>
-							<a href="#" class="btn btn-outline-primary">Pre-Register</a>
 						</div>
 					</div>
 					<div class="card">
@@ -228,15 +257,16 @@
 							alt="Card Image" />
 						<div class="card-body">
 							<h5 class="card-title">The One I Love (2014)</h5>
-							<span class="badge badge-danger">R</span>
+							<span class="badge badge-danger"
+								title="Restricted. Under 17 requires accompanying parent or adult guardian">R</span>
 							<small id="info" class="text-muted">Drama, Fantasy, Mystery | 1h 31min</small>
 							<p class="card-text">A troubled couple vacate to a beautiful getaway, but
 								bizarre circumstances further complicate their situation.</p>
 						</div>
 						<div class="card-footer" id="theone">
+							<a href="#headline2" class="btn btn-outline-primary">Register</a>
 							<a href="https://youtu.be/jCOvhojlZzQ" target="_blank"
 								class="btn btn-outline-primary">Watch Trailer on YouTube</a>
-							<a href="#" class="btn btn-outline-primary">Pre-Register</a>
 						</div>
 					</div>
 					<div class="card">
@@ -245,16 +275,17 @@
 							alt="Card Image" />
 						<div class="card-body">
 							<h5 class="card-title">The Hateful Eight (2015)</h5>
-							<span class="badge badge-danger">R</span>
+							<span class="badge badge-danger"
+								title="Restricted. Under 17 requires accompanying parent or adult guardian">R</span>
 							<small id="info" class="text-muted">Crime, Drama, Mystery | 3h 7min</small>
 							<p class="card-text">In the dead of a Wyoming winter, a bounty hunter and
 								his prisoner find shelter in a cabin currently inhabited by a
 								collection of nefarious characters.</p>
 						</div>
 						<div class="card-footer">
+							<a href="#headline2" class="btn btn-outline-primary">Register</a>
 							<a href="https://youtu.be/nIOmotayDMY" target="_blank"
 								class="btn btn-outline-primary">Watch Trailer on YouTube</a>
-							<a href="#" class="btn btn-outline-primary">Pre-Register</a>
 						</div>
 					</div>
 				</div>
@@ -268,7 +299,8 @@
 							alt="Card Image" />
 						<div class="card-body">
 							<h5 class="card-title">Spirited Away (2001)</h5>
-							<span class="badge badge-success">PG</span>
+							<span class="badge badge-success"
+								title="Parental Guidance Suggested">PG</span>
 							<small id="info" class="text-muted">Animation, Adventure, Family | 2h
 								5min</small>
 							<p class="card-text">During her family's move to the suburbs, a sullen
@@ -276,9 +308,9 @@
 								and spirits, and where humans are changed into beasts.</p>
 						</div>
 						<div class="card-footer" id="spirit">
+							<a href="#headline2" class="btn btn-outline-primary">Register</a>
 							<a href="https://youtu.be/ByXuk9QqQkk" target="_blank"
 								class="btn btn-outline-primary">Watch Trailer on YouTube</a>
-							<a href="#" class="btn btn-outline-primary">Pre-Register</a>
 						</div>
 					</div>
 					<div class="card">
@@ -287,16 +319,17 @@
 							alt="Card Image" />
 						<div class="card-body">
 							<h5 class="card-title">Ex Machina (2014)</h5>
-							<span class="badge badge-danger">R</span>
+							<span class="badge badge-danger"
+								title="Restricted. Under 17 requires accompanying parent or adult guardian">R</span>
 							<small id="info" class="text-muted">Drama, Mystery, Sci-Fi | 1h 48min</small>
 							<p class="card-text">A young programmer is selected to participate in a
 								ground-breaking experiment in synthetic intelligence by
 								evaluating the human qualities of a breath-taking humanoid A.I.</p>
 						</div>
 						<div class="card-footer" id="ex">
+							<a href="#headline2" class="btn btn-outline-primary">Register</a>
 							<a href="https://youtu.be/EoQuVnKhxaM" target="_blank"
 								class="btn btn-outline-primary">Watch Trailer on YouTube</a>
-							<a href="#" class="btn btn-outline-primary">Pre-Register</a>
 						</div>
 					</div>
 					<div class="card">
@@ -305,7 +338,8 @@
 							alt="Card Image" />
 						<div class="card-body">
 							<h5 class="card-title">Stoker (2013)</h5>
-							<span class="badge badge-danger">R</span>
+							<span class="badge badge-danger"
+								title="Restricted. Under 17 requires accompanying parent or adult guardian">R</span>
 							<small id="info" class="text-muted"> Drama, Thriller | 1h 39min</small>
 							<p class="card-text">After India's father dies, her Uncle Charlie, whom she
 								never knew existed, comes to live with her and her unstable
@@ -313,19 +347,19 @@
 								ulterior motives and becomes increasingly infatuated with him..</p>
 						</div>
 						<div class="card-footer">
+							<a href="#headline2" class="btn btn-outline-primary">Register</a>
 							<a href="https://youtu.be/YJWrXKoTpL0" target="_blank"
 								class="btn btn-outline-primary">Watch Trailer on YouTube</a>
-							<a href="#" class="btn btn-outline-primary">Pre-Register</a>
 						</div>
 					</div>
 				</div>
 			</div>
 			<!-- MOVIES ROW ENDS -->
-			<!-- PRE REGISTER -->
+			<!-- REGISTER -->
 			<div class="row">
-				<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-					<div class="row jumbotron jumbotron-fluid" id="book">
-						<div class="container">
+				<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12" id="book">
+					<div class="row jumbotron jumbotron-fluid">
+						<div class="container-fluid">
 							<h4 class="display-4">Registration</h4>
 							<p> Our festival is free of charge, but seats are limited. Please
 								register first</p>
@@ -334,17 +368,18 @@
 									<div class="row">
 										<div class="col">
 											<input type="text" class="form-control"
-												placeholder="First name" />
+												placeholder="First name*" id="submit-firstname" />
 										</div>
 										<div class="col">
 											<input type="text" class="form-control"
-												placeholder="Last name" />
+												placeholder="Last name*" id="submit-lastname" />
 										</div>
 									</div>
-									<label for="exampleFormControlInput1">Email address</label>
+									<div id="headline2"></div>
+									<label for="exampleFormControlInput1" id="email">Email address*</label>
 									<input type="email" class="form-control"
-										id="exampleFormControlInput1" placeholder="name@example.com" />
-									<p>Please choose your day and a film</p>
+										id="submit-email" placeholder="name@example.com" />
+									<p id="choice">Please choose your day and a film*</p>
 									<div id="accordion">
 										<div class="card">
 											<div class="card-header">
@@ -360,6 +395,7 @@
 														<input class="form-check-input" type="checkbox"
 															value="" id="defaultCheck1" />
 														<label class="form-check-label" for="defaultCheck1">
+															6:00 pm,
 															Fantastic Mister
 															Fox (2009)
 														</label>
@@ -368,7 +404,8 @@
 														<input class="form-check-input" type="checkbox"
 															value="" id="defaultCheck1" />
 														<label class="form-check-label" for="defaultCheck1">
-															The Hitchhiker's
+															8:00 pm, The
+															Hitchhiker's
 															Guide to the Galaxy (2005)
 														</label>
 													</div>
@@ -376,7 +413,8 @@
 														<input class="form-check-input" type="checkbox"
 															value="" id="defaultCheck1" />
 														<label class="form-check-label" for="defaultCheck1">
-															The Square
+															10:00 pm, The
+															Square
 															(2017)
 														</label>
 													</div>
@@ -397,7 +435,8 @@
 														<input class="form-check-input" type="checkbox"
 															value="" id="defaultCheck1" />
 														<label class="form-check-label" for="defaultCheck1">
-															Isle of Dogs
+															6:00 pm, Isle of
+															Dogs
 															(2018)
 														</label>
 													</div>
@@ -405,13 +444,15 @@
 														<input class="form-check-input" type="checkbox"
 															value="" id="defaultCheck1" />
 														<label class="form-check-label" for="defaultCheck1">
-															Moon (2009)
+															8:00 pm, Moon
+															(2009)
 														</label>
 													</div>
 													<div class="form-check">
 														<input class="form-check-input" type="checkbox"
 															value="" id="defaultCheck1" />
 														<label class="form-check-label" for="defaultCheck1">
+															10:00 pm,
 															High-Rise (2015)
 														</label>
 													</div>
@@ -422,7 +463,7 @@
 											<div class="card-header">
 												<a class="collapsed card-link" data-toggle="collapse"
 													href="#collapseThree">
-													Wednesday, August7th
+													Wednesday, August 7th
 												</a>
 											</div>
 											<div id="collapseThree" class="collapse"
@@ -432,6 +473,7 @@
 														<input class="form-check-input" type="checkbox"
 															value="" id="defaultCheck1" />
 														<label class="form-check-label" for="defaultCheck1">
+															6:00 pm,
 															Moonrise Kingdom
 															(2012)
 														</label>
@@ -440,7 +482,8 @@
 														<input class="form-check-input" type="checkbox"
 															value="" id="defaultCheck1" />
 														<label class="form-check-label" for="defaultCheck1">
-															The One I Love
+															8:00 pm, The One
+															I Love
 															(2014)
 														</label>
 													</div>
@@ -448,7 +491,8 @@
 														<input class="form-check-input" type="checkbox"
 															value="" id="defaultCheck1" />
 														<label class="form-check-label" for="defaultCheck1">
-															The Hateful
+															10:00 pm, The
+															Hateful
 															Eight (2015)
 														</label>
 													</div>
@@ -469,6 +513,7 @@
 														<input class="form-check-input" type="checkbox"
 															value="" id="defaultCheck1" />
 														<label class="form-check-label" for="defaultCheck1">
+															6:00 pm,
 															Spirited Away
 															(2001)
 														</label>
@@ -477,7 +522,8 @@
 														<input class="form-check-input" type="checkbox"
 															value="" id="defaultCheck1" />
 														<label class="form-check-label" for="defaultCheck1">
-															Ex Machina
+															8:00 pm, Ex
+															Machina
 															(2014)
 														</label>
 													</div>
@@ -485,7 +531,8 @@
 														<input class="form-check-input" type="checkbox"
 															value="" id="defaultCheck1" />
 														<label class="form-check-label" for="defaultCheck1">
-															Stoker (2013)
+															10:00 pm, Stoker
+															(2013)
 														</label>
 													</div>
 												</div>
@@ -493,62 +540,82 @@
 										</div>
 									</div>
 								</div>
-								<button type="submit" class="btn btn-primary">Submit</button>
+								<button type="submit" class="btn btn-primary"
+									id="submit-btn">Submit</button>
 							</form>
 						</div>
 					</div>
+
+				</div>
+				<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12" id="tickets">
+					<img src="media/tickets.png" alt="logo" class="img-fluid" />
 				</div>
 			</div>
-			<!-- PRE-REGISTER ENDS -->
+			<!-- Register ENDS -->
 			<!-- NEWS SECTION -->
 			<div class="row">
-				<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-					<img src="media/eye.png" alt="logo" id="eye" class="img-fluid" />
+				<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12"
+					id="jumbo-pic">
+					<img src="media/news.png" alt="logo" class="img-fluid" />
 				</div>
 				<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-					<div class="row jumbotron jumbotron-fluid" id="news">
+					<div class="row jumbotron jumbotron-fluid">
 						<div class="container">
 							<h4 class="display-4">Our News</h4>
-							<p> Our festival is free of charge, but seats are limited. Please
-								register first.
+							<div id="headline3"></div>
+							<p> Here you can read some news about Brooklyn Outdoor Film
+								Festival 2019
 							</p>
 							<div class="list-group">
 								<a href="#"
 									class="list-group-item list-group-item-action flex-column align-items-start">
 									<div class="d-flex w-100 justify-content-between">
-										<h5 class="mb-1">List group item heading</h5>
-										<small>3 days ago</small>
+										<h5 class="mb-1">The Most Anticipated Summer Festival</h5>
+										<small>20 minutes ago</small>
 									</div>
 									<p class="mb-1">Donec id elit non mi porta gravida at eget metus.
-										Maecenas sed diam eget risus varius blandit.</p>
-									<small>Donec id elit non mi porta.</small>
+										Maecenas sed diam eget risus varius blandit.Donec id elit non
+										mi porta gravida at eget metus.
+										Maecenas sed diam eget risus
+										varius blandit.</p>
+									<small>Read more...</small>
 								</a>
 								<a href="#"
 									class="list-group-item list-group-item-action flex-column align-items-start">
 									<div class="d-flex w-100 justify-content-between">
-										<h5 class="mb-1">List group item heading</h5>
-										<small class="text-muted">3 days ago</small>
+										<h5 class="mb-1">10 Things You Need to Know About BOFF 2019</h5>
+										<small class="text-muted">Yesterday</small>
 									</div>
 									<p class="mb-1">Donec id elit non mi porta gravida at eget metus.
-										Maecenas sed diam eget risus varius blandit.</p>
-									<small class="text-muted">Donec id elit non mi porta.</small>
+										Maecenas sed diam eget risus varius blandit.
+										Donec id elit non
+										mi porta gravida at eget metus.
+										Maecenas sed diam.
+									</p>
+									<small class="text-muted">Read more...</small>
 								</a>
 								<a href="#"
 									class="list-group-item list-group-item-action flex-column align-items-start">
 									<div class="d-flex w-100 justify-content-between">
-										<h5 class="mb-1">List group item heading</h5>
-										<small class="text-muted">3 days ago</small>
+										<h5 class="mb-1">Watch Movies Under The Stars</h5>
+										<small class="text-muted">2 days ago</small>
 									</div>
 									<p class="mb-1">Donec id elit non mi porta gravida at eget metus.
-										Maecenas sed diam eget risus varius blandit.</p>
-									<small class="text-muted">Donec id elit non mi porta.</small>
+										Maecenas sed diam eget risus varius blandit.
+										Donec id elit non
+										mi porta gravida at eget metus.
+										Maecenas sed diam eget risus
+										varius blandit.</p>
+									<small class="text-muted">Read more...</small>
 								</a>
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
-			<div class="footer">
+			<!-- NEWS SECTION ENDS -->
+			<!-- FOOTER -->
+			<div class="footer row">
 				<div class="container-fluid">
 					<div class="row">
 						<div
@@ -556,6 +623,7 @@
 							<h4 class="display-4">Follow Us</h4>
 						</div>
 					</div>
+					<!-- SOCIAL MEDIA ICONS -->
 					<div class="row">
 						<div class="text-center col-md-12 col-sm-12 col-xs-12">
 							<a href="https://www.facebook.com" target="_blank">
@@ -575,43 +643,48 @@
 							</a>
 						</div>
 					</div>
+					<!-- CONTACT -->
 					<div class="row">
 						<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
 							<p class="text-uppercase text-primary" id="contact">
 								<strong>Contact</strong>
+								<div id="headline5"></div>
 							</p>
 							<address class="contact-text">
 								Brooklyn Outdoor Film Festival
 								<br>11220 Boardwalk West Brooklyn, NY</br>
 							</address>
-							<a href="mailto:boff@mybrooklyn.com"
-								class="contact-text">boff@mybrooklyn.com</a>
+							<a href="mailto:boff@mybrooklyn.com" class="contact-text">boff@mybrooklyn.com</a>
 							<p></p>
 						</div>
+						<!-- LINKS -->
 						<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
-							<img src="media/park.png" class="img-fluid"
+							<img src="media/park2.png" class="img-fluid"
 								alt="Responsive image" />
-							<p class="card-text">With supporting text below as a natural lead-in to
-								additional content.</p>
-							<a href="#" class="btn btn-primary">Go somewhere</a>
+							<h4>Brooklyn Bridge Park</h4>
+							<p class="card-text">Explore the vibrant vistas, rich ecology,
+								and expansive
+								piers of this special waterfront park.</p>
+							<a href="https://www.brooklynbridgepark.org/" target="_blank"
+								class="btn btn-primary">Offical Website</a>
 						</div>
-
-
 						<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
 							<img src="media/bklyn.png" class="img-fluid"
 								alt="Responsive image" />
-							<p class="card-text">With supporting text below as a natural lead-in to
-								additional content.</p>
-							<a href="#" class="btn btn-primary">Go somewhere</a>
+							<h4>Brooklyn Borough</h4>
+							<p class="card-text">Brooklyn is the most populous borough of New York
+								City, with an estimated 2,648,771 residents in 2017.</p>
+							<a href="https://www.brooklyn-usa.org/" target="_blank"
+								class="btn btn-primary">Offical Website</a>
 						</div>
 					</div>
 				</div>
+				<button onclick="topFunction()" id="scrollUpBtn"
+					title="Go to top">
+					<img src="media/pop-logo.png" />
+				</button>
 			</div>
 		</div>
-
-
-
-
 		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
 			integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
 			crossorigin="anonymous"></script>
@@ -623,5 +696,6 @@
 			src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
 			integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
 			crossorigin="anonymous"></script>
+		<script src="js/script.js"></script>
 	</body>
 </html>
